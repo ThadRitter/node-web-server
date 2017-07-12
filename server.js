@@ -68,6 +68,12 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {  
+    res.render('project.hbs', {
+        pageTitle: 'Project Notes',
+    });
+});
+
 //const path = require('path');  
 //const exphbs = require('express-handlebars');
 
